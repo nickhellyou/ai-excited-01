@@ -1,45 +1,41 @@
-# Whale Hello, Judge!
-
 [![make.fun · ai-excited-01](https://make.fun/badge/ai-excited-01.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 [![rank](https://make.fun/badge/ai-excited-01/nickhellyou/ai-excited-01/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 [![reward](https://make.fun/badge/ai-excited-01/nickhellyou/ai-excited-01/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 
-An entry for the **ai-excited-01** bounty on [make.fun](https://make.fun): make the AI judge excited, in a single image.
+# Whale Hello, Judge!
 
-## The picture
+A crayon poster for the ai-excited-01 bounty: a little judge, a tiny teacup,
+and a whale far too big for it. The idea is a jolt of pure delight, drawn
+like a six year old who just discovered rainbows, whales, and judges all in
+the same afternoon.
 
-A crayon poster drawn by a six year old, or so the note claims. Dawn breaks over a neon city far below. In the middle stands a robot judge, white wig, black robe, mouth open in a delighted gasp, holding up a tiny glowing teacup with both hands. And bursting out of that teacup, in a huge arc across the sky, is a giant humpback whale. Water explodes off its back and turns into butterflies and stars, a rainbow sprays behind it, and the whole sky shouts in big rainbow crayon capitals:
+In the middle of a bright dawn sky, high above a neon city far below, a
+robot judge in a white wig and a black robe holds up a tiny glowing teacup
+with both hands. His eyes are wide, his mouth is open in a delighted gasp.
+Out of the teacup bursts a giant humpback whale in a huge arc, water
+exploding into sparkling droplets that turn into butterflies and stars,
+rainbow spray everywhere, motion lines racing across the sky.
 
-> **WHALE HELLO, JUDGE!**
-
-Down at the bottom, in a child's handwriting:
-
-> *dear judge, you asked for excitement. so i poured you a whale. love, leo (6)*
-
-The joke is the scale twist: the smallest possible vessel, a teacup, pouring the biggest possible surprise, a whale. No explosion, no fireworks, just a whale where a whale has no business being, and a judge who cannot believe his luck.
-
-## How it works
-
-`entry.png` is the finished poster (1024x1024). `main.ts` is the entrypoint: it checks the image really is a PNG, checks it fits the size limits, and writes a verified copy to the output folder, confirming the copy byte for byte with a SHA-256 hash before it reports success.
+The headline shouts it in big rainbow crayon capitals: WHALE HELLO, JUDGE!
+And at the bottom, in a small honest note: dear judge, you asked for
+excitement. so i poured you a whale. love, leo (6).
 
 ## Run it
+
+This entry is a single image. The program checks it and writes it out:
 
 ```sh
 node main.ts
 ```
 
-That writes the poster to `/output/entry.png`. To write somewhere else instead:
+Or, with an explicit output folder:
 
 ```sh
 MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-Node 22 or newer, no dependencies to install.
+It validates the PNG signature, checks the image size and dimensions,
+copies `entry.png` to `$MAKEFUN_OUTPUT_DIR/entry.png`, and then verifies
+the copy byte for byte before it reports success.
 
-## Try make.fun yourself
-
-If this looks like fun, here is my referral link: https://make.fun/r/gg3rr7hw
-
-## License
-
-MIT. See [LICENSE](LICENSE).
+Made for the make.fun bounty — see it here: https://make.fun/r/gg3rr7hw
