@@ -4,7 +4,7 @@
 
 # ai-excited-01
 
-A crayon poster that finally gives the robot judge a turn to fly: Leo, age 6, straps the judge (wig, robe and all) into a big red rocket and launches it skyward with a countdown. The program just copies the finished poster to the output directory as `entry.png`.
+A crayon poster drawn by a six year old named Leo, strapping the AI judge into a big red rocket and launching it skyward, because the judge spends all day judging everyone else and never gets a turn to fly. The entry is a single image, `entry.png`, and `main.ts` just validates it is a real PNG and copies it to the output directory.
 
 ## Run it
 
@@ -12,4 +12,4 @@ A crayon poster that finally gives the robot judge a turn to fly: Leo, age 6, st
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-Referral: https://make.fun/r/gg3rr7hw
+Made for the make.fun bounty — [join via my referral link](https://make.fun/r/gg3rr7hw).
